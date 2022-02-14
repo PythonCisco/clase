@@ -1,0 +1,31 @@
+
+1) cifrado del cesar
+
+a) cesar(texto_claro, llave) -> texto_cifrado
+Cuando julio cesar mandaba cartas secretas a sus aliados politicos (y probablemente a sus amantes) el no queria que nadie supiera que decian, ni siquiera si robaban la carta y la abrian. Para esconder sus secretos, el cifraba sus cartas, y el tenia un cifrado que le gustaba mucho. Tanto lo usó, que ahora lo llamamos "Cifrado César", en honor a el.
+
+Para encifrar una palabra, por ejemplo "scoobydoo papa", necesitas saber el alfabeto en orden, y una llave. La llave es un número, que usas de esta forma: Toma la letra (digamos S) toma la posición de esa letra en el alfabeto (19). Ahora toma la llave (digamos 3), y le sumamos a la posición de la letra el valor de la llave (en este caso, 19+3=22). Ahora, toma el numero que resultó (22) y conviertelo en la letra con esa posición (W). Así, en un cifrado de César con llave 3, la S se convierte en W. Aplica este algoritmo a cada letra de la cadena, y tienes una palabra descifrada! Asi que, "scoobydoo papa" con llave 3 se convierte en "wgssfchssdtete". Puedes ver porqué cesar usaba este cifrado, parece sinsentido!
+
+Pero, no usen este cifrado para cosas importantes. Es muy fácil de romper con computadoras modernas. Como el alfabeto solo tiene unas 26 letras, solo hay 26 llaves que puedes usar. Si tomas el mensaje y aplicas las 26 llaves, una detras de otra, vas a encontrar la llave correcta y descifrar el mensaje. Pero es un lindo ejercicio para practicar :).
+
+2) n elefantes se columpiaban
+
+a) elefantes(numero) -> cadena
+saben la cancion infantil:
+"1 elefante se columpiaba sobre la tela de una araña
+como veia que resistia, fue a buscar otro elefante
+
+2 elefantes se columpiaban sobre la tela de una araña
+como veian que resistia, fueron a buscar otro elefante."
+
+Bueno, hagan una función elefantes(numero) que imprima todas las estrofas de la canción, desde la primera estrofa hasta el número de estrofa que le pasaste a la función como argumento.
+Recuerda que la gramática cambia dependiendo si es un solo elefante o más de uno!
+
+3) terna pitagórica
+
+a) terna_pitagorica(a, b, c)
+sabes el teorema de pitágoras? el que dice que en un triangulo rectángulo la suma del cuadrado de los catetos es igual al cuadrado de la hipotenusa? (a**2 + b**2 == c**2).
+Bueno, cuando escoges tres números, si da la casualidad que estos tres números cumplen con el teorema de pitágoras, son una terna pitagórica.
+Haz una función llamada terna_pitagorica(a, b, c) que, dada 3 números, retorne True cuando son una terna pitagórica, y False cuando no. El orden no debe importar, asi que terna_pitagorica(3, 4, 5) -> True, así como terna_pitagorica(4, 5, 3) -> True y terna_pitagorica(5, 3, 4) -> True.
+
+b) 

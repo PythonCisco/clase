@@ -1,0 +1,11 @@
+
+int funcion(int a) {
+ a + b;
+}
+
+int funcion(int a) 
+{
+ a + b;
+}
+
+int funcion(int a) { a + b; };
