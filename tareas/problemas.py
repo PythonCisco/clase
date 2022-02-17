@@ -1,4 +1,8 @@
 #estudiante: Carlos Gonzalez
+"""
+Carlos Gonzalez
+2022-02-14
+"""
 
 
 def codigo_cesar():
@@ -15,6 +19,7 @@ def codigo_cesar():
 
     #definimos el numero codigo que usaremos
     k =int(input("ingrese el codigo para criptar: "))
+    #key == llave
 
     #creamos una variable para guardar la palabra criptada
     cifra=""
@@ -29,6 +34,32 @@ def codigo_cesar():
     #palabra criptada
     print(texto)
     print(cifra)
+
+def encifra_cesar(palabra, llave):
+    cifra=""
+    #abc="abcdefghijklmnñopqrstuvwxyz"
+    abc="abcdefghijklmnopqrstuvwxyz"
+    #empezamos el cifrado
+    for c in palabra:
+        if c in abc:
+            indice = abc.index(c) # indice del caracter
+            indice_encriptado = indice + llave
+            longitud_del_alfabeto = len(abc)
+            indice_cifrado = indice_encriptado % longitud_del_alfabeto # retorna un numero
+            cifra += abc[indice_cifrado]
+        else:
+            cifra+=c
+    return cifra
+
+"""
+abcdefghijklmnñopqrstuvwxyz
+           l*****
+**                     w*****
+*
+abcdefghijklmnñopqrstuvwxyzabcdefghijklmnñopqrstuvwxyz
+%%%
+"""
+
 
 def elefantes():
     #ingrese el numero de veces que se repite el programa

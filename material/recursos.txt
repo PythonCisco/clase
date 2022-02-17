@@ -1,0 +1,3 @@
+https://cryptopals.com/
+http://rosettacode.org/wiki/Category:Python
+http://openbookproject.net/thinkcs/python/english3e/

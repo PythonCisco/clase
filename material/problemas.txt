@@ -29,3 +29,40 @@ Bueno, cuando escoges tres números, si da la casualidad que estos tres números
 Haz una función llamada terna_pitagorica(a, b, c) que, dada 3 números, retorne True cuando son una terna pitagórica, y False cuando no. El orden no debe importar, asi que terna_pitagorica(3, 4, 5) -> True, así como terna_pitagorica(4, 5, 3) -> True y terna_pitagorica(5, 3, 4) -> True.
 
 b) 
+
+4) secuencia fibonacci
+
+a)
+Hay una historia bonita sobre cómo a un matemático italiano (Fibonacci) le gustaba pensar sobre esta secuencia.
+Imagina que tienes un par de conejos, y que se reproducen cada mes. Cada par de conejos produce otro par de conejos. Dada cualquier cantidad de meses, cuantos conejos hay?
+Bueno, resulta que la respuesta es la secuencia Fibonacci. No puedo explicar porqué (no lo se) pero puedo enseñarles sobre como generar la secuencia en si :).
+Empieza con dos numeros, 1 y 1. Para conseguir el siguiente número en la secuencia, suma los dos números previos, asi:
+1 1
+    2
+      3
+        5
+          8
+            13
+               21
+                  ...
+Hay un par de cosas que notar. Esta secuencia puedes indexarla, asi que el primer elemento de la secuencia (fibonacci(1)) retorna 1. fibonacci(2) retorna 1. fibonacci(3) retorna 2, fibonacci(4) retorna 3, y asi.
+Quiero que hagan una función llamada fibonacci que, dado el indice del número fibonacci, retorne el número fibonacci que le corresponde a ese índice.
+
+b) ahora, toma la función fibonacci() y cámbiala para que retorna una lista con los números fibonacci, desde el primero hasta el índice dado.
+
+c) ahora, toma la función fibonacci y añade dos parametros, primero y segundo, para que el algoritmo de fibonacci empiece en esos dos numeros en vez de en 1 y 1. Esto es, haz una función fibonacci(primero, segundo, indice) que retorne la suma fibonacci desde los dos primeros números hasta el índice dado.
+
+5) factorial
+
+a) el factorial de un número es la multiplicación de todos los números previos a este desde el 1. Así que:
+factorial(1) = 1*1
+factorial(2) = 1*2
+factorial(3) = 1*2*3
+y asi
+Haz una función llamada factorial() que retorne el factorial del número dado.
+
+b) asi como el factorial es la multiplicación de los números desde 1 a n, el triangular es la suma de los números desde 1 a n. Básate en la definición de factorial que hiciste arriba para escribir la función triangular(), que retorna el triangular de el número dado
+
+c) te habrás dado cuenta que uno puede tomar una operación y repetirla muchas veces, con múchos argumentos que van desde 1 hasta el número dado. Si puedes, haz una función que acepta otra función para aplicarla constantemente desde uno hasta n. LLamemosla... operarial(funcion, numero).
+
+d) La función factorial puede ser generalizada de los números enteros a los números complejos. Esta función generalizada se llama gamma. Yo no entiendo como funciona, pero no necesitas saberlo para implementarla en codigo. Intenta hacer una función llamada gamma(numero) que acepte un número complejo y compute su "factorial".
