@@ -1,3 +1,10 @@
+
+# problemas de python
 https://cryptopals.com/
 http://rosettacode.org/wiki/Category:Python
+
+# como editar un repositorio en git haciendo autenticación de ssh?
+https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278
+
+# libros de python
 http://openbookproject.net/thinkcs/python/english3e/
