@@ -8,3 +8,7 @@ https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278
 
 # libros de python
 http://openbookproject.net/thinkcs/python/english3e/
+
+# separación de intereses
+https://en.wikipedia.org/wiki/Separation_of_concerns
+https://es.wikipedia.org/wiki/Separaci%C3%B3n_de_intereses
