@@ -127,3 +127,6 @@ Por ejemplo:
 500s
 1000s
 
+10)
+Un palíndromo es una palabra que se escribe igual al derecho que al reves. Osea, "oro" al reves es "oro", asi que es un palindromo. Pero "perro" al reves es "orrep", asi que no es un palindromo.
+Haz una función palindromo(palabra) que acepte una palabra y retorne True si es palindroma y False si no.
