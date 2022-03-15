@@ -27,7 +27,7 @@ def fizzbuzz2(numero):
                  lista.append("Fizz")
             else:
                  lista.append(i)
-#Usamos return para que nos imprima la lista                 
+#Usamos return para que nos regrese la lista                 
     return lista
 
 
