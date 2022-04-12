@@ -17,8 +17,92 @@ abreviaciones
 # variaciones
 # [a, b, c] -> 4
 
+"""
+axx
+ a
+  a
+  b
+  c
+ b
+  a
+  b
+  c
+ c
+  a
+  b
+  c
+bxx
+ a
+  a
+  b
+  c
+ b
+  a
+  b
+  c
+ c
+  a
+  b
+  c
+cxx
+ a
+  a
+  b
+  c
+ b
+  a
+  b
+  c
+ c
+  a
+  b
+  c
+"""
+
+"""
+axx
+ ax
+  a
+  b
+  c
+ bx
+  a
+  b
+  c
+ cx
+  a
+  b
+  c
+bxx
+ ax
+  a
+  b
+  c
+ bx
+  a
+  b
+  c
+ cx
+  a
+  b
+  c
+cxx
+ ax
+  a
+  b
+  c
+ bx
+  a
+  b
+  c
+ cx
+  a
+  b
+  c
+"""
+
 def variaciones():
-    lst = 'a b c'.split()
+    lst = 'a b'.split()
     retorna = []
     for i in lst:
         for j in lst:
@@ -26,6 +110,43 @@ def variaciones():
                 print("i:{} j:{} k:{}".format(i, j, k))
                 retorna.append(i + j + k)
     return retorna
+
+
+def variaciones():
+    lst = 'a b'.split()
+    retorna = []
+    for i in lst:
+        for j in lst:
+            retorna.append(i + j)
+    return retorna
+
+def vari(lst):
+    retorno = []
+    def aiuda(lst, n):
+        if n:
+            for i in lst:
+                return i + aiuda(lst, n-1)
+        else:
+            return ""
+    return aiuda(lst, len(lst))
+
+def varis(lst, n):
+    retorno = []
+    if n:
+        for i in lst:
+            for j in varis(lst, n-1):
+                retorno.append(i + j)
+    else:
+       return [""]
+    return retorno
+
+def base(lst, n):
+    if not n:
+        return lst
+    else:
+        for i in lst:
+            return [i + j for j in base(lst, n-1)]
+            print(i, j)
 
 #def variaciones(lst):
     #for i in lst:
@@ -44,7 +165,19 @@ def permutaciones():
                 retorna.append(i+j+k)
                 print("{}\t\t{}\t\t{}\t\t{}".format(lst, ll, la, i+j+k))
     return retorna
-        
+
+
+"""
+2 = 1*2
+3 = 1*2*3
+4 = 1*2*3*4
+"""
+
+def factor(num):
+    if num:
+        return num * factor(num-1)
+    else:
+        return 1       
 
 """
 1) como se ve la entrada
